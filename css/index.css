@@ -1,0 +1,916 @@
+@import "./reset.css";
+@import "./common.css";
+
+/* 首页统一样式开始 */
+
+a {
+    color: #3377aa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff !important;
+    background: #3377aa;
+}
+
+/* 首页统一样式结束 */
+
+/* 首页通用样式开始 */
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section {
+    height: 656px;
+}
+
+.section .container {
+    padding-top: 40px;
+}
+
+.section:nth-child(even) {
+    background: #f7f7f7;
+}
+
+.aside-left {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    margin-top: -5px;
+}
+
+.aside-right {
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+
+.main {
+    /* 创建 BFC */
+    overflow: hidden;
+}
+
+.section-title {
+    width: 255px;
+    height: 22px;
+    margin-bottom: 11px;
+}
+
+.section-title h2 {
+    font-size: 15px;
+    color: #007722;
+    display: inline-block
+}
+
+.section-title .more {
+    font-size: 12px;
+}
+
+.section-title .more a {
+    color: #0077aa;
+}
+
+.li-item {
+    width: 133px;
+    height: 223px;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+    display: inline-block;
+}
+
+.li-item img {
+    width: 100px;
+    height: 141px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.li-item a {
+    color: #333333;
+    width: 100px;
+}
+
+.li-item .button {
+    width: 48px;
+    height: 19px;
+    padding: 2px 10px;
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #1c8bd0;
+}
+
+.aside-left h2 a {
+    color: #474747;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 15px;
+    width: fit-content;
+}
+
+.aside-left ul li {
+    position: relative;
+    display: list-item;
+    width: 100px;
+    height: 22px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.aside-right ul li {
+    display: inline-block;
+    width: 48px;
+    height: 19px;
+    font-size: 12px;
+}
+
+.aside-right .ul-item {
+    margin: 0 0 10px -10px;
+}
+
+.aside-right .ul-item li {
+    font-size: 12px;
+    width: 24px;
+    margin-left: 10px;
+}
+
+.aside-right .ul-item .item-title {
+    width: auto;
+    font-size: 13px;
+    color: #333333;
+    display: block;
+}
+
+.img-words li {
+    display: inline-block;
+    font-size: 12px;
+    color: #666666;
+}
+
+.img-words li img {
+    width: 48px;
+    height: 48px;
+}
+
+.img-words .description {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.img-words .description a {
+    display: inline-block;
+}
+
+.img-words .description div {
+    color: #999999;
+}
+
+.icon-app {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 2.5;
+}
+
+.icon-app i {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #999999;
+    background: no-repeat url("../images/icon-app.jpg");
+}
+
+#read-book a, #music a, #same-city a {
+    color: #614e3c;
+}
+
+.main ul li .star {
+    display: inline-block;
+    width: 55px;
+    height: 11px;
+    background: no-repeat url(../images/rating-star.png);
+}
+
+.main ul li .star-mark {
+    margin: 4px 0;
+}
+
+.main ul li .mark {
+    font-size: 12px;
+    color: #e09015;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+/* 首页通用样式结束 */
+
+/*页头开始*/
+.header .container {
+    display: block;
+    width: 1080px;
+    margin: 30px 134.5px 25px 134.5px;
+}
+
+.header .container h1 {
+    margin-right: 20px;
+}
+
+.header .logo {
+    background: url(../images/logo_db.png) no-repeat;
+    display: block;
+    width: 160px;
+    height: 34px;
+    font-size: 0;
+}
+
+.header .search {
+    width: 270px;
+    height: 30px;
+    border: 1px solid #c3c3c3;
+    position: relative;
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
+.header .typeText {
+    width: 240px;
+    height: 20px;
+    padding: 5px;
+    margin-right: 3px;
+}
+
+.header .search .typeText::placeholder {
+    color: #ccc;
+}
+
+.header .search button{
+    width: 30px;
+    height: 30px;
+    right: 0px;
+    position: absolute;
+    color: #c3c3c3;
+}
+
+.header .search button i {
+    font-size: 13px;
+}
+
+.header .menu {
+    margin-top: 8px;
+    margin-right: 3px;
+}
+
+.header .menu a {
+    background: url(../images/anony_nav_logo.png) no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-left: 14px;
+}
+
+.header .menu .menuReadBook {
+    background-position: 0px;
+}
+
+.header .menu .menuMoive {
+    background-position: -60px;
+}
+
+.header .menu .menuMusic {
+    background-position: -120px;
+}
+
+.header .menu .menuCity {
+    background-position: -180px;
+}
+
+.header .menu .menuGroup {
+    background-position: -240px;
+}
+
+.header .menu .menuReading {
+    background-position: -300px;
+}
+
+.header .menu .menuFM {
+    background-position: -360px;
+}
+
+.header .menu .menuTime {
+    background-position: -423px;
+}
+
+.header .menu .menuDoupin {
+    background-position: 0px;
+}
+
+/* 页头结尾 */
+
+/* 横幅开始 */
+
+.banner {
+    background: 3% 0 /52.2% no-repeat  url(../images/banner.jpg);
+    background-color: #edf4ed;
+}
+
+.banner .container {
+    width: 950px;
+    height: 304px;
+    margin: 0, auto;
+    position: relative;
+}
+
+.banner .container .app {
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    right: 328px;
+    top: 96px;
+}
+
+.banner .container .app .title {
+    font-size: 25px;
+    color: #111;
+}
+
+.banner .container .app a {
+    background-color: #00b51d;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 2px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 114px;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 8px 19px;
+    margin-top: 25px;
+}
+
+.banner .container .app .app-qr {
+    display: inline-block;
+    position: relative;
+}
+
+.banner .container .app .app-qr .icon {
+    width: 28px;
+    height: 28px;
+    vertical-align: -11px;
+    border: 1px solid #00b51d;
+    margin-left: 1px;
+}
+
+.banner .container .app .app-qr .box {
+    width: 200px;
+    height: 224px;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    text-align: center;
+    margin: -30px 0 0 1px;
+    display: none;
+}
+
+.banner .container .app .app-qr:hover .box {
+    display: block;
+}
+
+.banner .container .app .app-qr .box .big-icon {
+    left: 0px;
+    width: 162px;
+    height: 162px;
+    padding: 20px 20px 9px;
+}
+
+.banner .container .app .app-qr .box p {
+    font-size: 13px;
+    color: #666666;
+}
+
+.banner .container .login iframe {
+    width: 300px;
+    height: 303px;
+    position: absolute;
+    right: 0;
+}
+
+/* 横幅结束 */
+
+/* 热点开始 */
+
+#hot-point {
+    height: 582px;
+}
+
+#hot-point .cell {
+    width: 360px;
+    display: inline-block;
+}
+
+#hot-point .cell div {
+    width: 170px;
+    height: 197px;
+    margin-right: 10px;
+}
+
+#hot-point .cell a {
+    font-size: 12px;
+    line-height: 21px;
+}
+
+#hot-point .cell a img {
+    display: block;
+}
+
+#hot-point .cell span {
+    font-size: 12px;
+    color: #999999;
+}
+
+#hot-point .article {
+    width: 275px;
+    padding-left: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#hot-point .article ul li {
+    display: block;
+    font-size: 12px;
+    height: 16px;
+    margin-top: 12px;
+    line-height: 18px;
+}
+
+#hot-point .article ul li:first-child {
+    height: 64px;
+    margin-top: 0;
+}
+
+#hot-point .article ul li:first-child div {
+    color: #999999;
+}
+
+#hot-point .article ul li:first-child p {
+    font-size: 12px;
+    color: #666666;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+#hot-point .aside-right img {
+    width: 250px;
+    height: 125px;
+    margin-bottom: 17px;
+}
+
+#hot-point .aside-right .section-title {
+    margin-bottom: 3px;
+}
+
+#hot-point .aside-right ul li {
+    height: 40px;
+    width: auto;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+
+#hot-point .aside-right ul li a {
+    font-size: 14px;
+}
+
+#hot-point .aside-right ul li p {
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+/* 热点结束 */
+
+/* 豆瓣时间开始 */
+
+#douban-time .main .section-title {
+    padding-top: 5px;
+}
+
+#douban-time .main .time-list .li-item {
+    width: 100px;
+    height: 249px;
+    margin: 0 60px 30px 0;
+    position: relative;
+    display: inline-block;
+}
+
+#douban-time .main .time-list .li-item img {
+    margin-bottom: 6px;
+    display: block;
+}
+
+#douban-time .main .time-list li span {
+    display: block;
+    font-size: 12px;
+    line-height: 1;
+    color: #999999;
+    margin-top: 10px;
+}
+
+#douban-time .main .time-list li a .icon {
+    position: absolute;
+    background: url("../images/icon-headphone.png") right/14px no-repeat;
+    width: 100px;
+    height: 10px;
+    top: 122px;
+    right: 10px;
+}
+
+/* 豆瓣时间结束 */
+
+/* 电影开始 */
+
+#movie .aside-left h2 a {
+    color: #2277aa;
+}
+
+#movie .aside-left ul li img {
+    position: absolute;
+    margin-left: 3px;
+}
+
+#movie .aside-right .hot {
+    margin-top: 35px;
+}
+
+#movie .aside-right .hot ul li {
+    display: block;
+    border-bottom: 1px solid #eaeaea;
+    width: 165px;
+    height: 19px;
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+}
+
+#movie .aside-right .hot ul li a {
+    margin-left: 9px;
+}
+
+#movie .main ul li {
+    width: 100px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+#movie .main ul li {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+/* 电影结束 */
+
+/* 小组 开始 */
+
+#group .aside-left h2 a {
+    color: #2277aa;
+}
+
+#group .aside-right {
+    margin-left: 0;
+}
+
+#group .main ul li {
+    width: 248px;
+    height: 58px;
+    margin: 30px 30px 0 0;
+}
+
+#group .main ul li .description {
+    vertical-align: 11px;
+}
+
+#group .main ul li .description a {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* 小组 结束 */
+
+/* 读书 开始 */
+
+#read-book .aside-right .ul-item {
+    padding-top: 10px;
+    border-top: 1px solid #eaeaea;
+}
+
+#read-book .aside-right ul:first-of-type {
+    margin-top: -15px;
+    border-top: none;
+}
+
+#read-book .aside-right .ul-item li {
+    display: inline-block;
+    line-height: 1.72;
+}
+
+#read-book .aside-right .ul-item .item-title {
+    color: #999999;
+}
+
+#read-book .main ul .li-item a:first-child:hover {
+    background-color: initial;
+}
+
+#read-book .main ul .li-item {
+    width: 130px;
+    line-height: 1.6;
+}
+
+#read-book .main ul .li-item img {
+    margin-bottom: 0;
+}
+
+#read-book .main ul .li-item .description {
+    padding-left: 20px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+#read-book .main ul .li-item .button {
+    color: #ffffff;
+    background-color: #999a95;
+}
+
+#read-book .main ul .li-item a.button:hover {
+    background-color: #878882;
+}
+
+#read-book .main ul .li-item img {
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+}
+
+#read-book .main .book-second {
+    margin-top: 26px;
+}
+
+#read-book .main .book-second ul .li-item p {
+    padding-left: 0;
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 4px;
+}
+
+/* 读书 结束 */
+
+/* 音乐 开始 */
+
+#music {
+    height: 742px;
+}
+
+#music .aside-left h2 a {
+    color: #f38c00;
+}
+
+#music #app-FM i {
+    background-position: -250px 0;
+}
+
+#music #app-music-person {
+    margin-top: 10px;
+}
+
+#music #app-music-person i {
+    background-position: -50px 0;
+}
+
+#music .aside-right ul li {
+    width: 265px;
+    height: 61px;
+    margin-bottom: 19px;
+}
+
+#music .aside-right ul li span {
+    display: inline-block;
+    vertical-align: 35px;
+    margin-right: 7px;
+}
+
+#music .aside-right ul li .description {
+    vertical-align: -7px;
+}
+
+#music .aside-right ul li .description a {
+    padding-bottom: 4px;
+}
+
+#music .aside-right ul li .description div {
+    margin-top: 7px;
+}
+
+#music .main ul .li-item {
+    width: 130px;
+    height: 153px;
+}
+
+#music .main ul li a img {
+    width: 80px;
+    height: 80px;
+    padding: 0 25px;
+    margin-bottom: 5px;
+}
+
+#music .main .hot-list {
+    margin-top: 20px;
+}
+
+#music .main .hot-list .li-item {
+    height: 136px;
+}
+
+#music .main .hot-list .li-item p {
+    margin-top: 10px;
+}
+
+#music .main .hot-list .li-item a {
+    position: relative;
+}
+
+#music .main .hot-list .li-item i {
+    background: no-repeat url("../images/timeline-player-cover.png");
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    right: -58px;
+}
+
+/* 音乐 结束 */
+
+/* 豆品 开始 */
+
+#doupin {
+    height: 690px;
+}
+
+#doupin .aside-left h2 a {
+    color: #1f9432;
+}
+
+#doupin .aside-right #adv {
+    display: block;
+    background: no-repeat url("../images/doupin-hot-activity.jpg");
+    width: 265px;
+    height: 95px;
+    margin-bottom: 10px;
+}
+
+#doupin .aside-right a {
+    font-size: 14px;
+}
+
+#doupin .aside-right #second {
+    margin-top: 40px;
+}
+
+#doupin .aside-right #second ul li {
+    width: 265px;
+    height: 66px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+#doupin .aside-right #second ul li a {
+    display: block;
+}
+
+#doupin .aside-right #second ul li {
+    font-size: 12px;
+    color: #6a6a66;
+}
+
+#doupin .aside-right #second ul li span {
+    display: inline-block;
+}
+
+#doupin .aside-right #second ul li span:last-child {
+    margin-left: 180px;
+}
+
+#doupin .main .hot-sale .sale-img {
+    background: no-repeat url("../images/doupin-book.jpg");
+    background-size: cover;
+    width: 240px;
+    height: 220px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#doupin .main .hot-sale {
+    display: inline-block;
+    margin: 10px 20px 30px 0;
+}
+
+#doupin .main .hot-sale span {
+    color: #e55457;
+    display: inline-block;
+    margin-left: 101px;
+}
+
+/* 豆品 结束 */
+
+/* 同城 开始 */
+
+#same-city {
+    height: 400px;
+}
+
+#same-city .aside-left h2 a {
+    color: #ec5303;
+}
+
+#same-city .main .img-words li {
+    width: 248px;
+    height: 100px;
+    margin: 0 10px 25px 0;
+}
+
+#same-city .main .img-words li img {
+    width: 70px;
+    height: 90px;
+    margin-right: -4px;
+}
+
+#same-city .main .img-words li .description {
+    width: 160px;
+    line-height: 1.6;
+}
+
+#same-city .main .img-words li .description span:first-of-type {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+#same-city .main .img-words li .img-words-title {
+    font-size: 13px;
+}
+
+/* 同城 结束 */
+
+/* 页脚 开始 */
+
+footer.section {
+    font-size: 12px;
+    color: #999999;
+    line-height: 1.6;
+    height: 160px;
+}
+
+footer.section .container {
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px dashed #999999;
+}
+
+footer .aside-left, footer .aside-right {
+    width: 475px;
+    margin: 0;
+}
+
+footer .aside-left #tousu {
+    width: 109px;
+    height: 16px;
+    vertical-align: -3px;
+}
+
+footer .aside-left #jubao {
+    width: 15px;
+    height: 12.27px;
+    vertical-align: -3px;
+}
+
+footer .aside-left #wangbei {
+    height: 15px;
+    height: 17px;
+    vertical-align: -6px;
+}
+
+footer .aside-right div {
+    text-align: right;
+}
+
+footer .aside-right img {
+    margin: 20px 0 0 106px;
+}
+
+/* 页脚 结束 */
